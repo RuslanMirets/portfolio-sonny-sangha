@@ -7,7 +7,6 @@ export default function Home() {
 			<Head>
 				<title>Sonny&apos;s Portfolio</title>
 			</Head>
-			{/* Header */}
 			<Header />
 
 			{/* Hero */}
