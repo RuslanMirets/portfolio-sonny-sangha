@@ -13,6 +13,7 @@ const Skill: FC<IProps> = ({ directionLeft }) => {
 				initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
 				whileInView={{ x: 0, opacity: 1 }}
 				transition={{ duration: 1 }}
+				viewport={{ once: true }}
 				src="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_96102ac6497377cd53da621075fe828e/sanity.png"
 				alt="Icon"
 			/>
