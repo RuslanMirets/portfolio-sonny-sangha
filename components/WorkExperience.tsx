@@ -14,7 +14,7 @@ const WorkExperience: FC = () => {
 				Experience
 			</h3>
 
-			<div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory">
+			<div className="w-full flex space-x-5 overflow-x-scroll p-10 snap-x snap-mandatory scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
 				<ExperienceCard />
 				<ExperienceCard />
 				<ExperienceCard />
