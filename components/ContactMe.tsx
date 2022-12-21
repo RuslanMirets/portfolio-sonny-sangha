@@ -12,7 +12,9 @@ interface IInputs {
 const ContactMe: FC = () => {
 	const { register, handleSubmit } = useForm<IInputs>();
 
-	const onSubmit: SubmitHandler<IInputs> = (data) => console.log(data);
+	const onSubmit: SubmitHandler<IInputs> = (formData) => {
+		window.location.href = `mailto:ruslan.mirets@gmail.com?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} (${formData.email})`;
+	};
 
 	return (
 		<div className="h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
